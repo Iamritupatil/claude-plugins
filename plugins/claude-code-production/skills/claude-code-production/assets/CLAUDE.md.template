@@ -1,0 +1,28 @@
+# Project: <name>
+<One paragraph: what this is, who uses it, the stack.>
+
+## Commands
+- Install: `pnpm i`
+- Dev: `pnpm dev`
+- Test one file: `pnpm vitest run path/to/file.test.ts`
+- Typecheck + lint (run before every commit): `pnpm check`
+
+## Engineering standard
+- Write the smallest change that fully solves the task. Reuse before writing; no speculative abstractions.
+- Never cut: input validation, authorization, error handling at boundaries, timeouts, tests.
+- Plan first (docs/plans/<feature>.md) for anything touching more than 2 files; wait for approval.
+- Bug fix = failing test first. Never report "done" without running `pnpm check` and tests.
+- Security rules: see .claude/rules/security.md. Production rules: .claude/rules/code-quality.md.
+
+## Conventions
+- TypeScript strict; no `any`. Zod for all external input.
+- Handlers in `src/routes/`, business logic in `src/services/`, queries in `src/db/`.
+- IMPORTANT: never edit `src/generated/`; run `pnpm codegen`.
+- Conventional commits; one logical change per commit.
+
+## Gotchas
+- <e.g. Local Postgres runs on port 5433, not 5432.>
+- <e.g. Feature flags are read at boot; restart dev server after changing them.>
+
+## More context
+- Architecture: @docs/architecture.md

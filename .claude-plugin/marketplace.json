@@ -1,0 +1,11 @@
+{
+  "name": "my-claude-plugins",
+  "owner": { "name": "iamritupatil" },
+  "plugins": [
+    {
+      "name": "claude-code-production",
+      "source": "./plugins/claude-code-production",
+      "description": "Production-grade, security-first coding standard with enforcing hooks, review agents and workflow skills."
+    }
+  ]
+}

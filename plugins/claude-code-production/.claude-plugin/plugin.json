@@ -1,0 +1,7 @@
+{
+  "name": "claude-code-production",
+  "version": "1.0.0",
+  "description": "Production-grade, security-first coding standard for Claude Code: minimal-but-essential code, OWASP-based security, secret-blocking hooks, reviewer/auditor/test-runner agents, and plan/commit/verify/security-review skills.",
+  "author": { "name": "iamritupatil" },
+  "keywords": ["security", "code-quality", "production", "hooks", "code-review"]
+}
